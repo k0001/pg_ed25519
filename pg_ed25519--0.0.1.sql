@@ -1,0 +1,5 @@
+CREATE OR REPLACE FUNCTION
+  ed25519_verify(bytea, bytea, bytea)
+  RETURNS bool
+  AS 'MODULE_PATHNAME','ed25519_verify'
+LANGUAGE C STRICT;
